@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+/*MENU*/
+.large{
+  width: 100%;
+  height: 118px;
+  background: white;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  font-family: 'Lato', sans-serif;
+  color: #47700e;
+  position: fixed;
+  transition: .8s all;
+}
+.contenedorMenu{
+  position: relative;
+  width: 100%;
+  height: 118px;
+}
+.espacioMenu{
+  position: relative;
+  width: 100%;
+  height: 118px;
+}
+.logo{
+  position: absolute;
+  left: 350px;
+  width: 150px;
+  margin: 10px 0;
+  display: block;
+  transition: .8s all;
+}
+.logo img{
+  transition: .8s all;
+  width: 150px;
+}
+.menu{
+  position: absolute;
+  display: inline-block;
+  right: 350px;
+  font-size: 20px;
+  color: #47700e;
+  top: 50px;
+  transition: .8s all;
+}
+.menuOpciones a{
+  text-decoration: none;
+  color: #47700e;
+}
+.menuOpciones{
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+.menuOpciones a:hover{
+  text-decoration: none;
+  color: #90c643;
+}
+/*small menu*/
+.small{
+  height: 80px;
+}
+.menuSmall{
+  top: 25px;
+  right: 15px;
+}
+/*FIN MENU*/
+
+
+/*boton subir*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #47700e;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #90c643;
+}
+/* FIN boton subir*/
+
+
+/*slider*/
+.carousel .slide{
+  font-family: 'Lato', sans-serif;
+}
+hr {
+  height: 30px;
+  border-style: solid;
+  border-color: #47700e;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #47700e;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+.titulosBlog{
+  font-size: 32px;
+  color: #47700e;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.imagenBlog{
+  width: 100%;
+}
+.imagenBlog img{
+  margin: 0 auto;
+  display: block;
+}
+.contenidoBlog{
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+/*CATEGORIAS INDEX*/
+.categorias{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+}
+.imagen{
+  width: 636px;
+  height: 600px;
+  border: 1px solid black;
+  text-align: center;
+  top: 30px;
+  position: relative;
+}
+.uno{
+  background-image: url("../img/moringa.jpg");
+  background-position: center;
+}
+.dos{
+  background-image: url("../img/apio.jpg");
+  background-position: center;
+}
+.tres{
+  background-image: url("../img/teverde.jpg");
+  background-position: center;
+}
+.cuatro{
+  background-image: url("../img/chontaduro.jpg");
+  background-position: center;
+}
+.cinco{
+  background-image: url("../img/borojo.jpg");
+  background-position: center;
+}
+.descripcionCategorias{
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  margin-left:auto;
+  margin-right:auto;
+  top: 50%;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.descripcionCategorias a{
+  text-decoration: none;
+  color: #85d319;
+  font-size: 28px;
+}
+.descripcionCategorias a:hover{
+  text-decoration: none;
+  color: #b4f954;
+}
+.descripcionCategorias a:visited{
+  text-decoration: none;
+  color: #b4f954;
+}
+/*final categorias en index*/
+
+/*contenedores*/
+.containerProductos{
+  width: 1140px;
+  margin: 0 auto;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  /*border: 1px solid red;*/
+}
+.containerQuienes, .containerBlog{
+  width: 930px;
+  margin: 0 auto;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+.containerQuienes, .contenedorDecorado{
+  position: relative;
+  overflow: hidden;
+}
+.contenedorDecorado{
+  margin-top: 30px;
+  height: 200px;
+}
+/*FIN contenedores*/
+
+.infoQuienes strong{
+  color: #47700e;
+}
+.mapa{
+  display: inline-block;
+}
+.decorado{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/fondocontacto.jpg);
+  transform: translateY(-33px) skewY(-2deg);
+}
+.infoContacto{
+  display: inline-block;
+  top: 0;
+  position: absolute;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.infoContacto b{
+  color: #47700e;
+}
+.contenedorSocial{
+  position: relative;
+  display: inline-block;
+  width: 260px;
+  height: 50px;
+}
+.redSocial{
+  width: 260px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  bottom: 30px;
+}
+.redSocial img{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.redSocial h3{
+  display: inline-block;
+  position: absolute;
+  color: #47700e;
+  font-size: 28px;
+  bottom: 0.3px;
+}
+
+/*productos*/
+.productos{
+  display: inline-block;
+  width: 360px;
+  height: 432px;
+  margin: 6px 6px;
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  transition: 1s;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+}
+.productos img{
+  display: block;
+  margin: 0 auto;
+}
+.imgProductos{
+  display: block;
+  width: 360px;
+  height: 300px;
+  margin-top: 20px;
+}
+.tituloProducto{
+  text-align: center;
+  font-weight: bold;
+  color: #3b5e0a;
+  font-size: 24px;
+}
+#productosInfo{
+  text-align: center;
+  width: 360px;
+  height: 432px;
+  background: #fffa4c;
+  margin: 6px 6px;
+  position: absolute;
+  left: -290px;
+  top: -5px;
+  transition: 1s;
+  opacity: 0;
+  padding: 10px;
+}
+p#informacion{
+  color: black;
+  text-align: center;
+  font-size: 13px;
+}
+p#informacion b{
+  font-size: 14px;
+  color: #3b5e0a;
+}
+.productos:hover #productosInfo{
+  left: -5px;
+  top: -5px;
+  opacity: 1;
+}
+.contenedorFondo{
+  width: 100vw;
+  background-image: url('../img/fondo.png');
+  background-attachment: fixed;
+  background-position: center;
+}
+/*fin productos*/
+
+/*burguer botn*/
+.burguer-button{
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #47700e;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+  display: none;
+}
+/*fin del burguer*/
+
+.fill .primero{
+  background-image: url('../img/moringa.png');
+}
+@media screen and (max-width: 1400px){
+  /*menu*/
+  .logo{
+    position: absolute;
+    left: 50px;
+  }
+  .menu{
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+  }
+  /*fin del menu*/
+}
+@media screen and (max-width: 965px){
+/*productos*/
+.containerProductos{
+  width: 90vw;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+/*fin de productos*/
+.categorias{
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.containerProductos, .containerQuienes, .containerBlog{
+  width: 100vw;
+}
+
+/*menu*/
+.logo{
+  left: 50px;
+}
+.menu{
+  right: 50px;
+}
+
+/*fin de menu*/
+
+}
+@media screen and (max-width: 900px)  {
+  .uno{
+    background-image: url("../img/moringa4.jpg");
+    background-position: center;
+  }
+  .dos{
+    background-image: url("../img/apio4.jpg");
+    background-position: center;
+  }
+  .tres{
+    background-image: url("../img/teverde4.jpg");
+    background-position: center;
+  }
+  .cuatro{
+    background-image: url("../img/chontaduro4.jpg");
+    background-position: center;
+  }
+  .cinco{
+    background-image: url("../img/borojo4.jpg");
+    background-position: center;
+  }
+}
+@media screen and (max-width: 700px){
+
+  .containerProductos, .containerQuienes, .containerBlog{
+    width: 100vw;
+  }
+  .logo{
+    position: absolute;
+    width: 50px;
+    left: 0;
+  }
+  .logo img{
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 600px){
+/*menu*/
+.burguer-button{
+  display: inline-block;
+}
+.menu{
+  background: rgba(206, 255, 218, 0.9);
+  position: fixed;
+  width: 100vw;
+  left: -200%;
+  top: -1px;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: .3s;
+  color: #47700e;
+}
+.menu.active{
+  left: 0;
+}
+.menu ul{
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+.menu li{
+ display: block;
+ margin: 0;
+ font-size: 24px;
+ padding: 8px 0;
+ border-bottom: solid white 2px;
+}
+.menu li:first-child{
+  border-top: solid white 2px;
+}
+.container{
+  width: 100%;
+}
+.logo{
+  position: absolute;
+  left: auto;
+  right: 10px;
+  width: 150px;
+
+}
+.logo img{
+  width: 150px;
+}
+
+/*fin del menu*/
+
+.banner{
+  width: 95vw;
+  height: 100vh;
+}
+
+.categorias{
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorDecorado{
+  display: none;
+}
+.infoQuienes{
+  padding: 20px;
+  text-align: justify;
+}
+.containerQuienes{
+  width: 100vw;
+}
+.containerQuienes iframe{
+  margin-top: 300px;
+  width: 100vw;
+}
+.containerBlog{
+  width: 100vw;
+}
+.contenidoBlog{
+  margin: 15px;
+}
+.uno{
+  background-image: url("../img/moringa3.jpg");
+  background-position: center;
+}
+.dos{
+  background-image: url("../img/apio3.jpg");
+  background-position: center;
+}
+.tres{
+  background-image: url("../img/teverde3.jpg");
+  background-position: center;
+}
+.cuatro{
+  background-image: url("../img/chontaduro3.jpg");
+  background-position: center;
+}
+.cinco{
+  background-image: url("../img/borojo3.jpg");
+  background-position: center;
+}
+.containerBlog img{
+  width: 100%;
+}
+.mapa{
+  display: block;
+  border: 1px solid black;
+}
+.contenedorSocial{
+  position: relative;
+  display: block;
+  width: 260px;
+  height: 50px;
+  margin-top: 20px;
+}
+.redSocial{
+
+  position: absolute;
+  bottom: 0;
+}
+.infoContacto{
+  display: block;
+}
+
+}

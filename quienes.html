@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Almenat Quienes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <header class="large" id="large">
+      <div class="contenedorMenu">
+        <figure class="logo" id="logo">
+          <img src="img/LOGO ALMENAT.png" alt="">
+        </figure>
+        <span id="burguer-button" class="burguer-button icon-menu">Menú</span>
+        <nav class="menu" id="menu">
+          <ul>
+            <li class="menuOpciones"><a href="index.html">Inicio</a></li>
+            <li class="menuOpciones"><a href="productos.html">Productos</a></li>
+            <li class="menuOpciones"><a href="quienes.html">Quienes Somos</a></li>
+            <li class="menuOpciones"><a href="contacto.html">Contácto</a></li>
+            <li class="menuOpciones"><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="espacioMenu"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
+    <div class="contenedorDecorado"><div class="decorado"></div></div>
+    <section class="containerQuienes">
+
+      <p class="infoQuienes">
+        <strong>Misión</strong><br><br>
+        Ofrecer a nuestros clientes un producto que contribuya a su  nutrición y bienestar, garantizando la inocuidad del mismo,
+        al llevar procesos de buenas prácticas de manufactura con calidad competente,
+        comprometidos en proporcionar un excelente servicio a la sociedad y aportar buen desarrollo al país.<br><br>
+        <strong>Visión</strong><br><br>
+        Ser una compañía preferida de alimentos, conservando siempre la calidad de nuestros productos a nivel nutricional para brindar bienestar,
+        esto para lograr posesionarnos en los próximos años en el mercado colombiano como una de las empresas más competitivas,
+        llevando nuestros productos a un nivel cualificado, conservando siempre una calidad intachable para nuestros clientes.<br><br>
+        <strong>Politicas</strong><br><br>
+        • Servir a nuestro consumidores con calidad, servicio y honestidad para alcanzar máximos niveles de competitividad en el mercado nacional.<br>
+        • Relaciones personales basada en la confianza y el respeto mutuo, en un ambiente sano y propicio para que los empleados tengan un compromiso ético y serio con lo que se está fabricando.<br>
+        • Comprometidos en una sólida ética laboral desarrollamos cursos de capitación, al fin de mantener dentro de los empleados un correcto compromiso con la empresa para su buen funcionamiento.<br>
+        •	Compromiso con prácticas empresariales, medioambientales sostenibles, que ayudan a mejorar el ecosistema.<br>
+      </p>
+    </section>
+  </body>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script type="text/javascript">
+
+  $(document).on("scroll", function() {
+
+  if($(document).scrollTop()>50) {
+  $("header").addClass("small");
+  $("nav").addClass("menuSmall");
+  document.getElementById('logo').style.display = "none";
+  } else {
+  $("header").removeClass("small");
+  $("nav").removeClass("menuSmall");
+  document.getElementById('logo').style.display = "block";
+  }
+
+  });
+  // boton subir
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+// burguer menu
+        var consulta = window.matchMedia('(max-width: 500px)');
+        consulta.addListener(mediaQuery);
+
+        var $burguerButton = document.getElementById('burguer-button');
+        var $menu = document.getElementById('menu');
+        function toggleMenu(){
+          $menu.classList.toggle('active');
+        };
+
+        function mediaQuery(){
+          if (consulta.matches) {
+            $burguerButton.addEventListener('touchstart', toggleMenu);
+          }else{
+            $burguerButton.removeEventListener('touchstart', toggleMenu);
+          }
+        }
+        mediaQuery();
+
+        //gestos touch
+        function showMenu(){
+          $menu.classList.add('active');
+        };
+        function hideMenu(){
+          $menu.classList.remove('active');
+        };
+
+        var $body = document.body;
+        var gestos = new Hammer($body);
+          gestos.on('swipeleft', hideMenu);
+          gestos.on('swiperight', showMenu);
+
+  </script>
+</html>

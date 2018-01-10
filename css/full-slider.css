@@ -1,0 +1,50 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html,
+body {
+    height: auto;
+}
+
+.carousel,
+.item,
+.active {
+    height: auto;
+}
+
+.carousel-inner {
+    height: auto;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: auto;
+    height: auto;
+}
+.fill img{
+  width: 100%;
+
+}
+
+@media screen and (max-width: 500px) {
+  .carousel,
+  .item,
+  .active {
+      height: auto;
+  }
+
+  .carousel-inner {
+      height: auto;
+  }
+  .fill{
+    height: auto;
+  }
+ .fill img{
+   width: 100vw;
+ }
+
+}
