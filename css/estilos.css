@@ -224,6 +224,9 @@ hr:before {
 .infoQuienes strong{
   color: #47700e;
 }
+.infoQuienes{
+  font-size: 17px;
+}
 .mapa{
   display: inline-block;
 }
